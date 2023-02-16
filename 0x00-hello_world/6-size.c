@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdio.h>
 /**
  * main - Entry point
@@ -17,4 +18,6 @@ print("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(d));
 printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
 return (0);
 }
+=======
+>>>>>>> 4a6c6f83aba748d51462dfb8e17d217eea8971a3
 
