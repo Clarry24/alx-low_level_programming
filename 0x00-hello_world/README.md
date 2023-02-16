@@ -1,1 +1,3 @@
-Hello world
+Pre-processing
+Assembling
+Compiling
