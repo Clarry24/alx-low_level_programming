@@ -1,32 +1,24 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates two strings
+ * string_toupper - Changes all lowercase letters
+ *                  of a string to uppercase.
+ * @str: The string to be changed.
  *
- * @dest: string that is added to
- * @src: string to be appended
- * @n: the number of bytes from @src
- *
- * Return: a pointer to the resulting string @dest
+ * Return: A pointer to the changed string.
  */
-
-char *_strncat(char *dest, char *src, int n)
+char *string_toupper(char *str)
 {
-	int len1 = 0; /* string length for src */
-	int len2 = 0; /* string length for dest */
-	int i;
+	int index = 0;
 
-	while (src[len1] != '\0')
-		len1++;
-
-	while (dest[len2] != '\0')
-		len2++;
-
-	for (i = 0; i < n; i++)
+	while (str[index])
 	{
-		dest[len2] = src[i];
-		len2++;
+		if (str[index] >= 'a' && str[index] <= 'z')
+			str[index] -= 32;
+
+		index++;
 	}
-	return (dest);
+
+	return (str);
 }
 
